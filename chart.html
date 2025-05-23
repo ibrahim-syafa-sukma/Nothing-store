@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    .nav {
+      background-color: #222;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .item:last-child {
+      border-bottom: none;
+    }
+    .item-name {
+      font-weight: bold;
+    }
+    .total {
+      text-align: right;
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+    .checkout-btn {
+      display: block;
+      margin: 30px auto 0;
+      padding: 10px 30px;
+      background-color: #222;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .checkout-btn:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <a href="index.html">Discover</a>
+    <a href="collection.html">Collection</a>
+    <a href="about.html">About</a>
+    <a href="chart.html">Chart</a>
+  </div>
+
+  <div class="container">
+    <h2>Your Cart</h2>
+
+    <div class="item">
+      <div class="item-name">Minion White Tee</div>
+      <div class="item-price">Rp75.000</div>
+    </div>
+
+    <div class="item">
+      <div class="item-name">Oversize Hoodie</div>
+      <div class="item-price">Rp190.000</div>
+    </div>
+
+    <div class="total">
+      <strong>Total:</strong> Rp265.000
+    </div>
+
+    <button class="checkout-btn">Checkout</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collection</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    .header-bg {
+      background: url('gambar/1105186.jpg') no-repeat center;
+      background-size: cover;
+      height: 250px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: white;
+      padding: 15px 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      padding-bottom: 5px;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      border-bottom: 2px solid #000;
+    }
+
+    .content {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 2.2em;
+      margin-bottom: 30px;
+    }
+
+    .category-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .category {
+      background: white;
+      width: 180px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.3s ease;
+    }
+
+    .category:hover {
+      transform: translateY(-5px);
+    }
+
+    .category img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .category h3 {
+      margin: 10px 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header-bg"></header>
+  <nav class="nav">
+    <a href="index.html">Discover</a>
+    <a href="collection.html" class="active">Collection</a>
+    <a href="about.html">About</a>
+    <a href="chart.html">Chart</a>
+  </nav>
+
+  <section class="content">
+    <h2>Our Categories</h2>
+    <div class="category-grid">
+      <a class="category" href="t-shirt.html">
+        <img src="gambar/logo baju.jpg" alt="T-shirt">
+        <h3>T-shirt</h3>
+      </a>
+      <a class="category" href="hoodie.html">
+        <img src="gambar/logo jket.jpg" alt="Hoodie">
+        <h3>Hoodie</h3>
+      </a>
+      <a class="category" href="topi.html">
+        <img src="gambar/logo topi.jpg" alt="Topi">
+        <h3>Topi</h3>
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
